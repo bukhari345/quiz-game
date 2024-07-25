@@ -1,0 +1,129 @@
+.quiz-card {
+  overflow: hidden;
+  background-color: rgb(253, 63, 129);
+  color: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 20px auto;
+  transition: transform 200ms ease-in, box-shadow 200ms ease-in;
+}
+
+.quiz-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(253, 63, 129);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.quiz-creator,
+.quiz-date,
+.quiz-question-number {
+  color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-creator {
+  font-size: 18px;
+}
+
+.quiz-date {
+  font-size: 14px;
+  align-self: flex-end;
+}
+
+.quiz-question-number {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  align-self: flex-end;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-title {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.quiz-description {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.quiz-tags {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like-button {
+  color: #007bff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.like-button:hover {
+  color: #0056b3;
+}
+
+.more-button,
+.delete-button {
+  padding: 10px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.more-button:hover,
+.delete-button:hover {
+  color: #007bff;
+}
+
+.delete-button:hover {
+  color: #dc3545;
+}

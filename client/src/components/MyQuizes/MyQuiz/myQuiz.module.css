@@ -1,0 +1,123 @@
+.quiz-card {
+  overflow: hidden;
+  /* background: #ff4081; */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 75%;
+  margin: 20px auto;
+  transition: transform 200ms ease-in, box-shadow 200ms ease-in;
+}
+
+.quiz-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background: #ff4081; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  color: white;
+}
+
+.quiz-creator,
+.quiz-date,
+.quiz-question-number {
+  color: white;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-creator {
+  font-size: 18px;
+}
+
+.quiz-date {
+  font-size: 14px;
+  align-self: flex-end;
+}
+
+.quiz-question-number {
+  /* background: #ff4081; */
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  align-self: flex-end;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.quiz-description {
+  color: #ffff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.quiz-tags {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: x-large;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-buttons button:nth-child(2) {
+  background-color: #6c757d;
+}
+
+.card-buttons button:nth-child(2):hover {
+  background-color: #5a6268;
+}
+
+.card-buttons button:nth-child(3) {
+  background-color: #dc3545;
+}
+
+.card-buttons button:nth-child(3):hover {
+  background-color: #c82333;
+}

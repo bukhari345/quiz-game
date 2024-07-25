@@ -1,0 +1,84 @@
+.page {
+  min-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  position: relative;
+  padding: 0;
+  background-image: url("../../../assets/Background.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 90%;
+  height: 600px;
+  color: #fff;
+  padding: 10px;
+}
+
+.section button {
+  width: 300px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #80838b;
+  background-color: #fff;
+  border-radius: 4px;
+  font-size: 1.7rem;
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  min-height: 52px;
+  padding: 16px 4px;
+  line-height: 0.875rem;
+}
+
+.section input {
+  width: 400px;
+  border: 1px solid #cfd8dc;
+  border-radius: 0.5rem;
+  font-size: 20px;
+  outline: none;
+  padding: 0.7rem;
+  text-align: center;
+  background-color: #6cccf4;
+  color: #fff;
+  box-shadow: 0 1px 3px #80838b;
+}
+.customplaceholder::placeholder {
+  color: #608094; /* Change to your desired color */
+  opacity: 1; /* Optional: Set the opacity to 1 to ensure full color opacity */
+}
+
+.section h2,
+h4 {
+  font-weight: 900;
+  color: #fff;
+  margin: 5px;
+  text-transform: capitalize;
+}
+
+.section h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.section h4 {
+  font-size: 1.6 rem;
+}
+
+.characterImage {
+  position: absolute;
+  bottom: 20px;
+  left: 120px;
+  height: 450px; /* Adjust as needed */
+}
